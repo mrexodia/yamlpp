@@ -1,0 +1,21 @@
+.job_template: &job_definition
+  script:
+    - test project
+
+.postgres_services:
+  services: &postgres_definition
+    - postgres
+    - ruby
+
+.mysql_services:
+  services: &mysql_definition
+    - mysql
+    - ruby
+
+test:postgres:
+  <<: *job_definition
+  services: *postgres_definition
+
+test:mysql:
+  <<: *job_definition
+  services: *mysql_definition
