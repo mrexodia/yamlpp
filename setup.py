@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="yamlpp",
-    version="1.0.0",
+    version="1.0.1",
     author="Duncan Ogilvie",
     description="Simple YAML preprocessor, resolves anchors.",
     long_description=long_description,
